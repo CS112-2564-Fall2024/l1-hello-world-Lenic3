@@ -1,0 +1,41 @@
+public class Whiteboard {
+// value
+String instructions;
+
+//constructor default
+public Whiteboard(){
+    this.instructions = "None";
+}
+
+//constructer full
+public Whiteboard(String instructions)
+{
+    this.instructions = instructions;
+}
+
+//setters
+public void setInstructions(String instructions){
+    this.instructions = instructions;
+}
+
+//getters
+public String getInstructions(){
+    return instructions;
+}
+
+//to string
+public String toString(){
+    return instructions;
+}
+
+//equals
+public boolean equals(Whiteboard otherWhiteboard){
+    if(instructions.equals(otherWhiteboard)){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+}
